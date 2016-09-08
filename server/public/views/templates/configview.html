@@ -1,0 +1,17 @@
+<div class="row" id = "configview">
+  <h1>Settings</h1>
+  <h3>Add colors to the game:</h3>
+
+
+  <div col-md-6>
+    <form>
+         <!-- call newShade function from dataFactory -->
+      <select ng-change = "newShade()" ng-model="chosenColor">
+         <!-- loop of over newColors array -->
+        <option ng-repeat="color in newColors">{{color}}</option>
+
+      </select>
+      </form>
+
+
+</div>
